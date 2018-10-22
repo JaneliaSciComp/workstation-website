@@ -1,0 +1,57 @@
+title: Janelia Workstation
+tagline: Discovery Platform for Neuroscience
+description: > # this means to ignore newlines until "baseurl:"
+  The Janelia Workstation is a discovery platform for neuroscience. 
+  The aim of this project is to create a common framework for interaction 
+  among scientists working in different labs, studying different organisms 
+  with diverse modalities and computational methods.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+urls:
+    git: "https://github.com/JaneliaSciComp/janelia-workstation"
+    remote: "http://remoteworkstation.int.janelia.org"
+    mailinglist: "http://listserv.int.janelia.org/mailman/listinfo/janelia-workstation"
+    webstation: "http://webstation.int.janelia.org"
+
+    bugs:
+        view: "http://issuetracker.int.janelia.org/browse/JW"
+        report: "http://issuetracker.int.janelia.org/secure/CreateIssueDetails!init.jspa?pid=10109&issuetype=1"
+        email: "mailto:workstation-support@janelia.hhmi.org"
+    
+    docs:
+        user: "http://wiki.int.janelia.org/wiki/display/JW/Janelia+Workstation+User+Manual"
+        dev: "http://wiki.int.janelia.org/wiki/display/JW/Janelia+Workstation+Developer's+Guide"
+        jacs: "http://wiki.int.janelia.org/wiki/display/JW/JACS+Developer's+Guide"
+        remote: "http://wiki/wiki/display/JW/Remote+Workstation"
+    
+    help:
+        client: "mailto:rokickik@janelia.hhmi.org"
+        webstation: "mailto:clements@janelia.hhmi.org"
+        mouse: "mailto:olbrisd@janelia.hhmi.org"
+ 
+    download:
+        mac: "/files/JaneliaWorkstation-macosx.tgz"
+        windows: "/files/JaneliaWorkstation-windows.exe"
+        linux: "/files/JaneliaWorkstation-linux.tgz"
+
+    jdk:
+        mac: "/files/java/jdk-8u181-macosx-x64.dmg"
+        windows: "/files/java/jdk-8u181-windows-x64.exe"
+        linux: "/files/java/jdk-8u181-linux-x64.tar.gz"
+
+    vaa3d:
+        mac: "/files/vaa3d/vaa3d-macosx.zip"
+        linux: "/files/vaa3d/vaa3d-linux.tgz"
+
+    fiji:
+        mac: "https://downloads.imagej.net/fiji/latest/fiji-macosx.zip"
+        windows: "https://downloads.imagej.net/fiji/latest/fiji-win64.zip"
+        linux: "https://downloads.imagej.net/fiji/latest/fiji-linux64.zip"
+        h5jplugin: "/files/fiji/H5J_Installer.jar"
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+

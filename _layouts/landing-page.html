@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include /head.html %}
+
+	<body id="top">
+
+        {% include /header.html %}
+
+        <!-- Banner (GMR_SS00730-20140620_20_B6) -->
+        <section id="banner">
+            <div class="inner">
+                <h2>{{ site.title }}</h2>
+                <p>{{ site.tagline }}</p>
+                <ul class="actions">
+                    <li><a href="#download" class="button big special">Download</a></li>
+                    <li><a href="#learn" class="button big alt">Learn More</a></li>
+                </ul>
+            </div>
+        </section>
+        {{ content }}
+        {% include /footer.html %}
+
+    </body>
+
+</html>

@@ -1,0 +1,141 @@
+---
+layout: landing-page
+---
+
+<!-- One -->
+<section id="download" class="wrapper style1">
+    <header class="major">
+        <h2>Download the Workstation client</h2>
+        <p>The Workstation runs on all three major operating systems
+        <br />
+        <a href="requirements.html" style="font-size: 0.9em">System Requirements</a>
+        </p>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="4u">
+                <section class="special box">
+                    <i class="icon fa-apple major"></i>
+                    <h3>Mac OS X</h3>
+                    <p>Prerequisites: <a href="{{ site.urls.jdk.mac }}">Oracle JDK 8</a></p>
+                    <div class="buttonrow">
+                        <a href="{{ site.urls.download.mac }}" class="button alt">Workstation</a>
+                    </div>
+                    <div class="buttonrow">
+                        <a href="{{ site.urls.vaa3d.mac }}" class="button alt">Vaa3d</a> 
+                        <a href="{{ site.urls.fiji.mac }}" class="button alt">Fiji</a>
+                    </div>
+                </section>
+            </div>
+            <div class="4u">
+                <section class="special box">
+                    <i class="icon fa-windows major"></i>
+                    <h3>MS Windows</h3>
+                    <p>Prerequisites: <a href="{{ site.urls.jdk.windows }}">Oracle JDK 8</a></p>
+                    <div class="buttonrow">
+                        <a href="{{ site.urls.download.windows }}" class="button alt">Workstation</a>
+                    </div>
+                    <div class="buttonrow">
+                        <a href="{{ site.urls.vaa3d.windows }}" onclick="alert('Windows build is currently unavailable'); return false;" class="button alt disabled">Vaa3d</a> 
+                        <a href="{{ site.urls.fiji.windows }}" class="button alt">Fiji</a>
+                    </div>
+                </section>
+            </div>
+            <div class="4u">
+                <section class="special box">
+                    <i class="icon fa-linux major"></i>
+                    <h3>Linux</h3>
+                    <p>Prerequisites: <a href="{{ site.urls.jdk.linux }}">Oracle JDK 8</a></p>
+                    <div class="buttonrow">
+                        <a href="{{ site.urls.download.linux }}" class="button alt">Workstation</a><br />
+                    </div>
+                    <div class="buttonrow">
+                        <a href="{{ site.urls.vaa3d.linux }}" class="button alt">Vaa3d</a> 
+                        <a href="{{ site.urls.fiji.linux }}" class="button alt">Fiji</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div style="text-align: center; font-size: 0.9em">
+            <a href="manual/install.html">Installation Instructions</a> | 
+            <a href="fiji_h5j_plugin.html">Fiji 12-bit H5J Plugin</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Two -->
+<section id="learn" class="wrapper style2">
+    <header class="major">
+        <h2>Neuroscience Discovery platform</h2>
+        <p>Supporting processing, analysis, and annotation of large-scale 3d microscopy data</p>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="6u">
+                <section class="special">
+                    <a href="https://www.janelia.org/project-team/flylight" class="image fit"><img src="images/fly.jpg" alt="FlyLight" /></a>
+                    <h3>Fly</h3>
+                    <p>
+                    The FlyLight project is creating a digital atlas of the <i>Drosophila</i> nervous system by studying confocal microscope images. The Workstation provides a complete set of image analysis services encompassing the entire image lifecycle from acquisition to publishing. Features include data set managment, metadata collection, LSM merging, MIP generation, image registration (i.e. alignment), neuron separation, ontology-driven annotation, and line publishing.
+                    </p>
+                    <ul class="actions">
+                        <li><a href="https://www.janelia.org/project-team/flylight" class="button alt">Learn More</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="6u">
+                <section class="special">
+                    <a href="https://www.janelia.org/project-team/mouselight" class="image fit"><img src="images/mouse.jpg" alt="MouseLight" /></a>
+                    <h3>Mouse</h3>
+                    <p>
+                    The MouseLight project is leveraging new imaging techniques to reconstruct axonal arbors of neurons across the entire mouse brain. The Workstation provides advanced tools for visualizing stitched mouse brain images in both orthogonal and 3d views. It implements high-throughput manual annotation capabilities allowing annotators to trace individual neurons to generate complete axonal projection maps. 
+                    </p>
+                    <ul class="actions">
+                        <li><a href="https://www.janelia.org/project-team/mouselight" class="button alt">Learn More</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Three -->
+<section id="three" class="wrapper style1">
+    <div class="container">
+        <div class="row">
+            <div class="8u">
+                {% include /remote.html %}
+            </div>
+            <div class="4u">
+                <section>
+                    <h3>Extensible</h3>
+                    <p>
+                    Extensibility and reuse are cornerstones of high-value software engineering. With those goals in mind, the Workstation is built on top of the <b>NetBeans Rich Client Platform</b>, and provides a plug-in architecture for extending functionality.
+                    </p>
+                </section>
+                <hr />
+                <section>
+                    <h3>Service-Oriented</h3>
+                    <p>
+                    The Workstation leverages the <b>JA</b>nelia <B>C</b>omputational <b>S</b>ervices (<B>JACS</b>) architecture developed by Scientific Computing. These services codify algorithms and data APIs, and make them available for reuse. 
+                    </p>
+                </section>
+                <hr />
+                <section>
+                    <h3>Open Source</h3>
+                    <p>
+                    The Workstation is completely built on top of open source libraries and frameworks. No commercial licenses are necessary, and all code is available for publishing.
+                    </p>
+                </section>
+                <hr />
+                <ul class="actions">
+                    <li><a href="docs.html" class="button alt">Learn More</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>          
+
+

@@ -1,0 +1,18 @@
+<!-- Header -->
+<header id="header" class="skel-layers-fixed">
+    <h1><a href="{{ site.baseurl }}/" class="site-title" >{{ site.title }}</a></h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a href="{{ site.baseurl }}/docs.html">Documentation</a></li>
+            <li><a href="{{ site.baseurl }}/support.html">Support</a></li>
+            <li><a href="{{ site.baseurl }}/about.html">About</a></li>
+            {% for page in site.pages %}
+                  {% if page.title %}
+                    <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                  {% endif %}
+            {% endfor %}
+            <li><a href="{{ site.baseurl }}/#download" class="button special">Download</a></li>
+        </ul>
+    </nav>
+</header>

@@ -1,0 +1,82 @@
+---
+layout: default
+team:
+    - username: bolstadm
+      name: Mark Bolstad
+      title: Software Engineer
+    - username: clementsj
+      name: Jody Clements
+      title: Software Engineer
+    - username: goinac
+      name: Cristian Goina
+      title: Software Engineer
+    - username: murphys
+      name: Sean Murphy
+      title: Director, Scientific Computing Software
+    - username: olbrisd
+      name: Donald J. Olbris
+      title: Software Engineer 
+    - username: otsunah
+      name: Hideo Otsuna
+      title: Data Scientist
+    - username: rokickik
+      name: Konrad Rokicki
+      title: Manager, Software Engineering
+    - username: schauderd
+      name: David Schauder
+      title: Software Engineer
+    - username: svirskasr
+      name: Rob Svirskas
+      title: Project Manager
+    - username: trautmane
+      name: Eric T. Trautman
+      title: Software Engineer
+
+---
+
+<!-- Main -->
+<section id="main" class="wrapper style1">
+    <header class="major">
+        <h2>About</h2>
+        <p>Janelia Workstation</p>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="1u">&nbsp;</div>
+            <div class="10u">
+                <section>
+                    <h2>Project History</h2>
+                    <p>
+                    The Janelia Workstation Project began as a component of the Fly Integration aspect of the Fly Team Project (which encompassed Light, Olympiad, and Electron Microscopy). Since the initial release of the tools in September of 2011, we have continued to develop data processing pipelines and visualizations for the Drosophila community. 
+                    </p>
+                    <p>
+                    More recently, the Workstation framework was leveraged to build out the tools for the MouseLight project. Both communities have greatly benefitted from the overlap in developed functionality, demonstrating the power of software reuse.
+                    </p>
+                    <p>
+                    
+                    </p>
+                </section>
+
+                <hr />
+
+                <section>
+                    <h2>Contributors</h2>
+                    Although the core Workstation team is quite small, many individuals have contributed to the Workstation over the years. These are the current members of Scientific Computing involved with Workstation development:
+                    </p>
+         
+                    <p>
+                    {% for user in page.team %}
+                        <div style="float: left">
+                            {% include /person.html user=user %}
+                        </div>
+                    {% endfor %}
+                    </p>
+
+                    <br style="clear: both"/>
+
+                </section>
+            </div>
+            <div class="1u">&nbsp;</div>
+        </div>
+    </div>
+</section>

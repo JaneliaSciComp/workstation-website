@@ -1,0 +1,127 @@
+---
+layout: default
+---
+
+<!-- Main -->
+<section id="main" class="wrapper style1">
+    <header class="major">
+        <h2>Installing Workstation on Windows</h2>
+    </header>
+
+    <div class="container 90%">
+    
+         <div class="row">
+            <div class="12u">
+                <p>These instructions are specifically for Windows. If you are using another operating system, you can find instructions <a href="upgrade.html">here</a>.</p></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="12u">
+                <h2>Step 1: Remove Existing Workstation Installation, if necessary</h2>
+            </div>
+
+            <div class="5u">
+                <a href="#" class="image fit"><img src="{{ site.baseurl }}/images/manual/windows_uninstall.png" alt="" /></a>
+            </div>
+            <div class="7u">
+                <section>
+                    <ol class="alt">
+                        <li>Click the Windows Start button</li>
+                        <li>Select "Control Panel"</li>
+                        <li>Click on "Uninstall a program"</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="5u">
+                <a href="#" class="image fit"><img src="{{ site.baseurl }}/images/manual/windows_uninstall2.png" alt="" /></a>
+            </div>
+            <div class="7u">
+                <section>
+                    <ol class="alt" start="4">
+                        <li>Right-click the Janelia Workstation, and select "Uninstall/Change"</li>
+                        <li>This is also a good opportunity to uninstall older versions of Java, if you have any. Unless you specifically need them (e.g. for running Matlab), it's a good idea to remove older versions of Java, because they may contain security holes.</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="5u">
+                <a href="#" class="image fit"><img src="{{ site.baseurl }}/images/manual/windows_uninstall3.png" alt="" /></a>
+            </div>
+            <div class="7u">
+                <section>
+                    <ol class="alt" start="6">
+                        <li>When uninstalling the Workstation, you can check the "Remove directory" checkbox to remove the old configuration folder. This folder does not store your important preferences, only things like Window positioning and application logs.</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="row breakbefore">
+            <div class="12u">
+                <h2>Step 2: Install Java 8</h2>
+            </div>
+            <div class="5u">
+                <a href="#" class="image fit"><img src="{{ site.baseurl }}/images/manual/windows_java.png" alt="" /></a>
+            </div>
+            <div class="7u">
+                <section>
+                    <ol class="alt">
+                        <li>Download <a href="{{ site.urls.jdk.windows }}">Oracle JDK 8</a>.</li>
+                        <li>Run the downloaded executable and follow the wizard to install the JDK.</li>
+                        <li>When the installer completes it will automatically run the JRE installer. Allow this to install as well.</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="row breakbefore">
+            <div class="12u">
+                <h2>Step 3: Install Janelia Workstation</h2>
+            </div>
+            <div class="5u">
+                <a href="#" class="image fit"><img src="{{ site.baseurl }}/images/manual/windows_install.png" alt="" /></a>
+            </div>
+            <div class="7u">
+                <section>
+                    <ol class="alt">
+                        <li>Download the <a href="{{ site.urls.download.windows }}">Janelia Workstation Installer</a>.</li>
+                        <li>Run the installer and follow the wizard to install.</li>
+                        <li>The default options are fine, just press </i>Next</i> until it starts installing.</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="row breakbefore">
+            <div class="12u">
+                <h2>Trouble installing?</h2>
+            </div>
+            <div class="5u">
+                <a href="#" class="image fit"><img src="{{ site.baseurl }}/images/manual/windows_folder.png" alt="" /></a>
+            </div>
+            <div class="7u">
+                <section>
+                    <ol class="alt">
+                        <li>In some cases, after uninstalling and attempting to install again, you can get an error which says "The specified installation folder is not empty."</li>
+                        <li>Open Windows Explorer</li>
+                        <li>Navigate to "C:\Program Files\"</li>
+                        <li>Delete the "JaneliaWorkstation" folder</li>
+                        <li>Try installing again</li>
+                        <li>If you still have problems, please <a href="{{ site.urls.bugs.email }}">contact us</a>.</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+

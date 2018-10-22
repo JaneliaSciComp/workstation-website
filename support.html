@@ -1,0 +1,54 @@
+---
+layout: default
+leads:
+    webstation:
+        username: clementsj
+        name: Jody Clements
+        title: Software Engineer
+    mouse:
+        username: olbrisd
+        name: Donald J. Olbris
+        title: Software Engineer
+    client:
+        username: rokickik
+        name: Konrad Rokicki
+        title: Manager, Software Engineering
+
+---
+
+<!-- Main -->
+<section id="main" class="wrapper style1">
+    <header class="major">
+        <h2>Support</h2>
+        <p>How to get help with the Workstation</p>
+    </header>
+    <div class="container">
+        <p>
+        If you come across an issue with installing or using the Workstation, please report it. If a bug results in an error, you'll be given the option to report it along with diagnostic information that usually allows us to quickly track down the root cause and fix the problem in the next release. To create a general help ticket, you can use the Workstation's <i>Help</i> &rarr; <i>Report A Bug</i> menu option, or send an email to <a href="{{ site.urls.bugs.email }}">workstation-support@janelia.hhmi.org</a>.
+        </p>
+        <p>
+        For immediate assistance, please contact one of these individuals directly:
+        </p>
+        <div class="row">
+            <div class="4u">
+                <section class="special">
+                    <h2>Workstation</h2>
+                    {% include /person.html user=page.leads.client %}
+                </section>
+            </div>
+            <div class="4u">
+                <section class="special">
+                    <h2>Webstation</h2>
+                    {% include /person.html user=page.leads.webstation %}
+                </section>
+            </div>
+            <div class="4u">
+                <section class="special">
+                    <h2>MouseLight</h2>
+                    {% include /person.html user=page.leads.mouse %}
+                </section>
+            </div>
+        </div>
+        <br style="clear: both"/>
+    </div>
+</section>
