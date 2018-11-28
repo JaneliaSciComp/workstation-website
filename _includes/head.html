@@ -3,20 +3,27 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
+
+{% assign base = '' %}
+{% assign depth = page.url | split: '/' | size | minus: 1 %}
+{% if    depth <= 1 %}{% assign base = '.' %}
+{% elsif depth == 2 %}{% assign base = '..' %}
+{% elsif depth == 3 %}{% assign base = '../..' %}
+{% elsif depth == 4 %}{% assign base = '../../..' %}{% endif %}
+
 <head>
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="description" content="Janelia Workstation" />
+    <meta name="keywords" content="workstation,janelia,hhmi,neuroscience" />
     <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-    <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/js/skel.min.js"></script>
-    <script src="{{ site.baseurl }}/js/skel-layout.min.js"></script>
-    <script src="{{ site.baseurl }}/js/init.js"></script>
-    <noscript>
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/skel.css" />
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/style-xlarge.css" />
-    </noscript>
+    <script src="{{ base }}/js/jquery.min.js"></script>
+    <script src="{{ base }}/js/skel.min.js"></script>
+    <script src="{{ base }}/js/skel-layout.min.js"></script>
+    <script src="{{ base }}/js/init.js"></script>
+    <link rel="stylesheet" href="{{ base }}/css/skel.css" />
+    <link rel="stylesheet" href="{{ base }}/css/style.css" />
+    <link rel="stylesheet" href="{{ base }}/css/style-xlarge.css" />
+
 </head>
