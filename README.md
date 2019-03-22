@@ -2,7 +2,7 @@
 
 ## Build
 
-Compiling this website requires Ruby 2.3.3 and Jekyll. 
+Compiling this website requires Ruby 2.4.2 and Jekyll. 
 On MacOS, this is best managed by installing Homebrew and RVM (Ruby Version Manager):
 
 ~~~~
@@ -13,7 +13,7 @@ On MacOS, this is best managed by installing Homebrew and RVM (Ruby Version Mana
 Then Ruby and Jekyll:
 
 ~~~~
-    rvm install ruby-2.3.3
+    rvm install ruby-2.4.2
     gem install jekyll
 ~~~~
 
