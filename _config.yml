@@ -7,15 +7,18 @@ description: > # this means to ignore newlines until "baseurl:"
   with diverse modalities and computational methods.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+components:
+    remote: true
+    vaa3d: true
+    fiji: true
 urls:
     git: "https://github.com/JaneliaSciComp/janelia-workstation"
-    remote: "http://remoteworkstation.int.janelia.org"
     mailinglist: "http://listserv.int.janelia.org/mailman/listinfo/janelia-workstation"
     webstation: "http://webstation.int.janelia.org"
 
     bugs:
-        view: "http://issuetracker.int.janelia.org/browse/JW"
-        report: "http://issuetracker.int.janelia.org/secure/CreateIssueDetails!init.jspa?pid=10109&issuetype=1"
+        view: "https://issues.hhmi.org/issues/projects/JW"
+        report: "https://issues.hhmi.org/issues/secure/CreateIssueDetails!init.jspa?pid=12475&issuetype=1&summary=Issue+created+via+link&priority=3"
         email: "mailto:workstation-support@janelia.hhmi.org"
     
     docs:

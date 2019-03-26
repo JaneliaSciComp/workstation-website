@@ -1125,7 +1125,7 @@ div.buttonrow {
 
 /* Style from Wiki */
 
-#janelia-people {
+div.janelia-people {
 	margin: 0px auto;
 	padding: 10px;
 	font-family: Verdana,Arial,Helvetica,Sans-Serif;
@@ -1138,10 +1138,17 @@ div.buttonrow {
 	height: 332px;
 }
 
-#janelia-people a:link {
+div.janelia-people a:link {
     vertical-align: top;
 	color: #106a94;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+div.alumni {
+    padding-left: 10px;
+    font-family: Verdana,Arial,Helvetica,Sans-Serif;
+    background-color: #fff;
+    font-size: 0.9em;
 }
 

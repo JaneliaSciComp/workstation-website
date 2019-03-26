@@ -1,9 +1,6 @@
 ---
 layout: default
 team:
-    - username: bolstadm
-      name: Mark Bolstad
-      title: Software Engineer
     - username: clementsj
       name: Jody Clements
       title: Software Engineer
@@ -31,7 +28,17 @@ team:
     - username: trautmane
       name: Eric T. Trautman
       title: Software Engineer
-
+alumni:
+    - username: bolstadm
+      name: Mark Bolstad
+    - username: brunsc
+      name: Christopher Bruns
+    - username: fosterl
+      name: Les Foster
+    - username: yuy
+      name: Yang Yu
+    - username: saffordt
+      name: Todd Safford
 ---
 
 <!-- Main -->
@@ -50,10 +57,7 @@ team:
                     The Janelia Workstation Project began as a component of the Fly Integration aspect of the Fly Team Project (which encompassed Light, Olympiad, and Electron Microscopy). Since the initial release of the tools in September of 2011, we have continued to develop data processing pipelines and visualizations for the Drosophila community. 
                     </p>
                     <p>
-                    More recently, the Workstation framework was leveraged to build out the tools for the MouseLight project. Both communities have greatly benefitted from the overlap in developed functionality, demonstrating the power of software reuse.
-                    </p>
-                    <p>
-                    
+                    The Workstation framework was also leveraged to build out neuron tracing and visualization tools for the MouseLight project. Both communities have greatly benefited from the overlap in developed functionality, demonstrating the power of software reuse.
                     </p>
                 </section>
 
@@ -61,17 +65,27 @@ team:
 
                 <section>
                     <h2>Contributors</h2>
-                    Although the core Workstation team is quite small, many individuals have contributed to the Workstation over the years. These are the current members of Scientific Computing involved with Workstation development:
-                    </p>
          
                     <p>
                     {% for user in page.team %}
                         <div style="float: left">
-                            {% include /person.html user=user %}
+                            {% include /person.html user=user hasImage=true %}
                         </div>
                     {% endfor %}
                     </p>
 
+                    <br style="clear: both"/>
+
+                    <h2>Alumni</h2>
+                    
+                    <p>
+                    {% for user in page.alumni %}
+                        <div class="alumni">
+                            {{ user.name }}
+                        </div>
+                    {% endfor %}
+                    </p>
+                    
                     <br style="clear: both"/>
 
                 </section>

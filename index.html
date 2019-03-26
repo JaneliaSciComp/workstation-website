@@ -19,11 +19,15 @@ layout: landing-page
                     <h3>Mac OS X</h3>
                     <p>Prerequisites: <a href="{{ site.urls.jdk.mac }}">Oracle JDK 8</a></p>
                     <div class="buttonrow">
-                        <a href="{{ site.urls.download.mac }}" class="button alt">Workstation</a>
+                        <a href="{{ site.urls.download.mac }}" class="button alt">Download</a>
                     </div>
                     <div class="buttonrow">
+                        {% if site.components.vaa3d %}
                         <a href="{{ site.urls.vaa3d.mac }}" class="button alt">Vaa3d</a> 
+                        {% endif %}
+                        {% if site.components.fiji %}
                         <a href="{{ site.urls.fiji.mac }}" class="button alt">Fiji</a>
+                        {% endif %}
                     </div>
                 </section>
             </div>
@@ -33,11 +37,15 @@ layout: landing-page
                     <h3>MS Windows</h3>
                     <p>Prerequisites: <a href="{{ site.urls.jdk.windows }}">Oracle JDK 8</a></p>
                     <div class="buttonrow">
-                        <a href="{{ site.urls.download.windows }}" class="button alt">Workstation</a>
+                        <a href="{{ site.urls.download.windows }}" class="button alt">Download</a>
                     </div>
                     <div class="buttonrow">
+                        {% if site.components.vaa3d %}
                         <a href="{{ site.urls.vaa3d.windows }}" onclick="alert('Windows build is currently unavailable'); return false;" class="button alt disabled">Vaa3d</a> 
+                        {% endif %}
+                        {% if site.components.fiji %}
                         <a href="{{ site.urls.fiji.windows }}" class="button alt">Fiji</a>
+                        {% endif %}
                     </div>
                 </section>
             </div>
@@ -47,11 +55,15 @@ layout: landing-page
                     <h3>Linux</h3>
                     <p>Prerequisites: <a href="{{ site.urls.jdk.linux }}">Oracle JDK 8</a></p>
                     <div class="buttonrow">
-                        <a href="{{ site.urls.download.linux }}" class="button alt">Workstation</a><br />
+                        <a href="{{ site.urls.download.linux }}" class="button alt">Download</a><br />
                     </div>
                     <div class="buttonrow">
+                        {% if site.components.vaa3d %}
                         <a href="{{ site.urls.vaa3d.linux }}" class="button alt">Vaa3d</a> 
+                        {% endif %}
+                        {% if site.components.fiji %}
                         <a href="{{ site.urls.fiji.linux }}" class="button alt">Fiji</a>
+                        {% endif %}
                     </div>
                 </section>
             </div>
@@ -104,37 +116,36 @@ layout: landing-page
 <!-- Three -->
 <section id="three" class="wrapper style1">
     <div class="container">
+        {% if site.components.remote %}
         <div class="row">
             <div class="8u">
                 {% include /remote.html %}
             </div>
             <div class="4u">
-                <section>
-                    <h3>Extensible</h3>
-                    <p>
-                    Extensibility and reuse are cornerstones of high-value software engineering. With those goals in mind, the Workstation is built on top of the <b>NetBeans Rich Client Platform</b>, and provides a plug-in architecture for extending functionality.
-                    </p>
-                </section>
+                <section>{% include /feature1.html %}</section>
                 <hr />
-                <section>
-                    <h3>Service-Oriented</h3>
-                    <p>
-                    The Workstation leverages the <b>JA</b>nelia <B>C</b>omputational <b>S</b>ervices (<B>JACS</b>) architecture developed by Scientific Computing. These services codify algorithms and data APIs, and make them available for reuse. 
-                    </p>
-                </section>
+                <section>{% include /feature2.html %}</section>
                 <hr />
-                <section>
-                    <h3>Open Source</h3>
-                    <p>
-                    The Workstation is completely built on top of open source libraries and frameworks. No commercial licenses are necessary, and all code is available for publishing.
-                    </p>
-                </section>
+                <section>{% include /feature3.html %}</section>
                 <hr />
                 <ul class="actions">
                     <li><a href="docs.html" class="button alt">Learn More</a></li>
                 </ul>
             </div>
         </div>
+        {% else %}
+        <div class="row">
+            <div class="4u">
+                {% include /feature1.html %}
+            </div>
+            <div class="4u">
+                {% include /feature2.html %}
+            </div>
+            <div class="4u">
+                {% include /feature3.html %}
+            </div>
+        </div>
+        {% endif %}
     </div>
 </section>          
 

@@ -1,10 +1,7 @@
-    <div id="janelia-people">
-        <a href="http://wiki/wiki/display/intranet/Person+Profile?username={{ include.user.username }}">
-            <img src="http://wiki/wiki/plugins/servlet/ldappicture?name={{ include.user.username }}
-&width=200&height=200" width="200" height="200">
-            {{ include.user.name }}
-        </a>
+    <div class="janelia-people">
+        {% if include.hasImage %} 
+            <img src="images/developers/{{ include.user.username }}.jpg" width="200" height="200">
+        {% endif %}
         <br />
-        {{ include.user.title }}
+        {{ include.user.name }}
     </div>
-
