@@ -6,7 +6,7 @@ Compiling this website requires Ruby 2.4.2 and Jekyll.
 On MacOS, this is best managed by installing Homebrew and RVM (Ruby Version Manager):
 
 ~~~~
-    ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     curl -L https://get.rvm.io | bash -s stable --ruby
 ~~~~
 
