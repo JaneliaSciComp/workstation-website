@@ -18,6 +18,50 @@ layout: default
 
         <div class="row">
             <div class="12u">
+                <h2>Windows 10 Security Notes</h2>
+            </div>
+
+            <div class="5u">
+                <a href="#" class="image fit"><img src="{{ site.baseurl }}/images/manual/windows_defender1.png" alt="" /></a>
+            </div>
+            <div class="7u">
+                <section>
+                    <ol class="alt">
+                        <li>If you are using Windows 10, Windows Defender SmartScreen may prevent downloaded installers from running. </li>
+                        <li>If you see this screen, click the "More info" link.</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="5u">
+                <a href="#" class="image fit"><img src="{{ site.baseurl }}/images/manual/windows_defender2.png" alt="" /></a>
+            </div>
+            <div class="7u">
+                <section>
+                    <ol class="alt" start="3">
+                        <li>Then click the "Run anyway" button.</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="5u">
+                <a href="#" class="image fit"><img src="{{ site.baseurl }}/images/manual/windows_uac.png" alt="" /></a>
+            </div>
+            <div class="7u">
+                <section>
+                    <ol class="alt" start="4">
+                        <li>Click "Yes" if Windows User Account Control asks to allow the app to make changes to your device.</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="row breakbefore">
+            <div class="12u">
                 <h2>Step 1: Remove Existing Workstation Installation, if necessary</h2>
             </div>
 
@@ -114,6 +158,24 @@ layout: default
                         <li>Delete the "JaneliaWorkstation" folder</li>
                         <li>Try installing again</li>
                         <li>If you still have problems, please <a href="{{ site.urls.bugs.email }}">contact us</a>.</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <div class="row breakbefore">
+            <div class="12u">
+                <h2>Windows Firewall</h2>
+            </div>
+            <div class="5u">
+                <a href="#" class="image fit"><img src="{{ site.baseurl }}/images/manual/windows_firewall.png" alt="" /></a>
+            </div>
+            <div class="7u">
+                <section>
+                    <ol class="alt">
+                        <li>When you first run the Janelia Workstation, the Windows Defender Firewall may block some features of the application.</li>
+                        <li>Under most circumstances, "Domain networks" or "Private networks" will already be checked. If so, click "Allow access".</li>
+                        <li>If only "Public networks" is available, click "Cancel", then contact your local workstation administrator regarding how the workstation servers are set up and what the correct firewall setting is for you.</li>
                     </ol>
                 </section>
             </div>
