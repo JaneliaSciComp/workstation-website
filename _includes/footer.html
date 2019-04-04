@@ -56,25 +56,25 @@
                 </p>
                 <ul class="alt">
 
-                    {% if site.urls.help.client %}
+                    {% if site.poc.client %}
                     <li>
-                        <a href="{{ site.urls.help.client }}" class="icon fa-envelope">
+                        <a href="mailto:{{ site.poc.client.email }}" class="icon fa-envelope">
                             <span class="label2">Request general help with the Workstation</span>
                         </a>
                     </li>
                     {% endif %}
 
-                    {% if site.urls.help.webstation %}
+                    {% if site.poc.webstation %}
                     <li>
-                        <a href="{{ site.urls.help.webstation }}" class="icon fa-envelope-o">
+                        <a href="mailto:{{ site.poc.webstation.email }}" class="icon fa-envelope-o">
                             <span class="label2">Request help with Webstation</span>
                         </a>
                     </li>
                     {% endif %}
                     
-                    {% if site.urls.help.mouse %}
+                    {% if site.poc.mouse %}
                     <li>
-                        <a href="{{ site.urls.help.mouse }}" class="icon fa-envelope-o">
+                        <a href="mailto:{{ site.poc.mouse.email }}" class="icon fa-envelope-o">
                             <span class="label2">Request help with MouseLight Software</span>
                         </a>
                     </li>

@@ -11,6 +11,19 @@ components:
     remote: true
     vaa3d: true
     fiji: true
+poc:
+    client:
+        username: rokickik
+        name: Konrad Rokicki
+        email: "rokickik@janelia.hhmi.org"
+    webstation:
+        username: clementsj
+        name: Jody Clements
+        email: "mailto:clements@janelia.hhmi.org"
+    mouse:
+        username: olbrisd
+        name: Donald J. Olbris
+        email: "olbrisd@janelia.hhmi.org"
 urls:
     git: "https://github.com/JaneliaSciComp/janelia-workstation"
     mailinglist: "http://listserv.int.janelia.org/mailman/listinfo/janelia-workstation"
@@ -27,11 +40,6 @@ urls:
         jacs: "http://wiki.int.janelia.org/wiki/display/JW/JACS+Developer's+Guide"
         remote: "http://wiki/wiki/display/JW/Remote+Workstation"
     
-    help:
-        client: "mailto:rokickik@janelia.hhmi.org"
-        webstation: "mailto:clements@janelia.hhmi.org"
-        mouse: "mailto:olbrisd@janelia.hhmi.org"
- 
     download:
         mac: "/files/JaneliaWorkstation-macosx.tgz"
         windows: "/files/JaneliaWorkstation-windows.exe"

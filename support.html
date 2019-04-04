@@ -1,19 +1,5 @@
 ---
 layout: default
-leads:
-    webstation:
-        username: clementsj
-        name: Jody Clements
-        title: Software Engineer
-    mouse:
-        username: olbrisd
-        name: Donald J. Olbris
-        title: Software Engineer
-    client:
-        username: rokickik
-        name: Konrad Rokicki
-        title: Manager, Software Engineering
-
 ---
 
 <!-- Main -->
@@ -30,24 +16,39 @@ leads:
         For immediate assistance, please contact one of these individuals directly:
         </p>
         <div class="row">
+        {% if site.poc.webstation %}
             <div class="4u">
                 <section class="special">
                     <h2>Workstation</h2>
-                    {% include /person.html user=page.leads.client %}
+                    {% include /person.html user=site.poc.client hasImage=true %}
                 </section>
             </div>
             <div class="4u">
                 <section class="special">
                     <h2>Webstation</h2>
-                    {% include /person.html user=page.leads.webstation %}
+                    {% include /person.html user=site.poc.webstation hasImage=true %}
                 </section>
             </div>
             <div class="4u">
                 <section class="special">
                     <h2>MouseLight</h2>
-                    {% include /person.html user=page.leads.mouse %}
+                    {% include /person.html user=site.poc.mouse hasImage=true %}
                 </section>
             </div>
+        {% else %}
+            <div class="6u">
+                <section class="special">
+                    <h2>Workstation</h2>
+                    {% include /person.html user=site.poc.client hasImage=true %}
+                </section>
+            </div>
+            <div class="6u">
+                <section class="special">
+                    <h2>MouseLight</h2>
+                    {% include /person.html user=site.poc.mouse hasImage=true %}
+                </section>
+            </div>
+        {% endif %}
         </div>
         <br style="clear: both"/>
     </div>

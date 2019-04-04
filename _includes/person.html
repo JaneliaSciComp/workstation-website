@@ -3,5 +3,11 @@
             <img src="images/developers/{{ include.user.username }}.jpg" width="200" height="200">
         {% endif %}
         <br />
-        {{ include.user.name }}
+        {% if include.user.email %}
+            <a href="mailto:{{ include.user.email }}" class="icon fa-envelope-o">
+            {{ include.user.name }}
+            </a>
+        {% else %}
+            {{ include.user.name }}
+        {% endif %}
     </div>

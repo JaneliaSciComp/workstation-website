@@ -70,8 +70,10 @@ layout: landing-page
         </div>
 
         <div style="text-align: center; font-size: 0.9em">
-            <a href="manual/install.html">Installation Instructions</a> | 
-            <a href="fiji_h5j_plugin.html">Fiji 12-bit H5J Plugin</a>
+            <a href="manual/install.html">Installation Instructions</a>
+            {% if site.urls.fiji.h5jplugin %}
+                | <a href="fiji_h5j_plugin.html">Fiji 12-bit H5J Plugin</a>
+            {% endif %}
         </div>
 
     </div>
